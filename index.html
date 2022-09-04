@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Buttons/Mine.jpg">
     <title>Mine Sweeper</title>
 
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="fonts.css">
+    <script defer src="main.js"></script>
+    <script defer src="timer.js"></script>
 </head>
-<body>
-    hallo team
-    
+
+<body onload="init()">
+    <div class="board">
+        <div class="logo">
+            <img src="assets/Icons/Logo.png">
+            <div class="level-container">
+                <div class="level">Level</div>
+                <div class="difficulty">Easy</div>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <div id="timer" class="timer">
+
+                </div>
+
+                <div class="smileyContainer">
+                    <img class="smiley" src="assets/Icons/Happy.png" alt="">
+                </div>
+                
+
+                <div class="amountOfBombs">
+
+                </div>
+            </div>
+            <div id="divBoard" class="playground">
+
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>
